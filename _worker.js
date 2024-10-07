@@ -37,7 +37,7 @@ let go2Socks5s = [
 let addresses = [
 	//当sub为空时启用本地优选域名/优选IP，若不带端口号 TLS默认端口为443，#号后为备注别名
 	/*
-        'cf.090227.xyz',
+        'cf.090227.xyz#test',
 	'visa.cn:443',
 	'www.visa.com:8443',
 	'cis.visa.com:2053',
@@ -1249,7 +1249,7 @@ async function proxyURL(proxyURL, url) {
 function checkSUB(host) {
 	if ((!sub || sub == '') && (addresses.length + addressesapi.length + addressesnotls.length + addressesnotlsapi.length + addressescsv.length) == 0){
 		addresses = [
-			'cf.090227.xyz',
+			'cf.090227.xyz#test',
 			'visa.cn:443',
 			'www.visa.com:8443',
 			'cis.visa.com:2053',
